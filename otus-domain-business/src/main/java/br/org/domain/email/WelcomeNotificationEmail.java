@@ -9,7 +9,7 @@ import java.util.Map;
 public class WelcomeNotificationEmail extends Email implements StudioEmail {
 
 	private final String TEMPLATE = "/template/welcome-notification-template.html";
-	private final String SUBJECT = "Seja Bem Vindo ao Sistema Studio";
+	private final String SUBJECT = "Seja Bem Vindo ao Sistema Otus Domain";
 	private HashMap<String, String> dataMap;
 
 	public WelcomeNotificationEmail() {

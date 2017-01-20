@@ -10,7 +10,7 @@ import java.util.Map;
 public class DisableUserNotificationEmail extends Email implements StudioEmail {
 
 	private final String TEMPLATE = "/template/disable-user-notification-template.html";
-	private final String SUBJECT = "Alerta - Cadastro desabilitado OTUS STUDIO";
+	private final String SUBJECT = "Alerta - Cadastro desabilitado Otus Domain";
 	private Map<String, String> dataMap;
 
     public DisableUserNotificationEmail() {

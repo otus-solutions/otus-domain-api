@@ -10,7 +10,7 @@ import java.util.Map;
 public class NewUserNotificationEmail extends Email implements StudioEmail {
 
 	private final String TEMPLATE = "/template/new-user-notification-template.html";
-	private final String SUBJECT = "Alerta - Novo usuário cadastrado no sistema OTUS STUDIO";
+	private final String SUBJECT = "Alerta - Novo usuário cadastrado Otus Domain";
 	private HashMap<String, String> dataMap;
 
 	public NewUserNotificationEmail(User user) {
