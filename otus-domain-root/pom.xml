@@ -15,7 +15,7 @@
 		<wildfly-username>admin</wildfly-username>
 		<wildfly-password>admin</wildfly-password>
 
-		<owail.sender.version>1.0-SNAPSHOT</owail.sender.version>
+		<owail.sender.version>1.0</owail.sender.version>
 		<equalize.version>2.0.2</equalize.version>
 	</properties>
 
