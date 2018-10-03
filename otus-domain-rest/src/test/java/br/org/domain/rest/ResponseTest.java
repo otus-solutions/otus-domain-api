@@ -1,4 +1,4 @@
-package br.org.studio.rest;
+package br.org.domain.rest;
 
 import br.org.domain.rest.Response;
 import br.org.domain.user.dto.UserDto;
