@@ -12,22 +12,11 @@
 	</parent>
 
 	<dependencies>
+        <!-- Internal dependencies !-->
 		<dependency>
 			<groupId>org.ccem.domain</groupId>
 			<artifactId>otus-domain-persistence</artifactId>
 			<version>${project.parent.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>br.org.tutty</groupId>
-			<artifactId>equalizer</artifactId>
-			<version>${equalize.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>${commons.io.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -40,6 +29,20 @@
 			<groupId>org.ccem.rep-tool</groupId>
 			<artifactId>studio-repository-tool</artifactId>
 			<version>${studio.repository.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.org.tutty</groupId>
+			<artifactId>equalizer</artifactId>
+			<version>${equalize.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- External dependencies !-->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons.io.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>

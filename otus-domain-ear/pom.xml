@@ -61,6 +61,7 @@
 	</build>
 
 	<dependencies>
+		<!-- Modules !-->
 		<dependency>
 			<groupId>org.ccem.domain</groupId>
 			<artifactId>otus-domain-business</artifactId>
@@ -79,16 +80,8 @@
 			<version>${project.parent.version}</version>
 			<type>war</type>
 		</dependency>
-		<dependency>
-			<groupId>org.hibernate.ogm</groupId>
-			<artifactId>hibernate-ogm-core</artifactId>
-			<version>${hibernate.core.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate.ogm</groupId>
-			<artifactId>hibernate-ogm-mongodb</artifactId>
-			<version>${hibernate.mongodb.version}</version>
-		</dependency>
+
+		<!-- Internal dependencies !-->
 		<dependency>
 			<groupId>br.org.tutty</groupId>
 			<artifactId>equalizer</artifactId>
@@ -100,14 +93,33 @@
 			<version>${owail.sender.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>${commons.io.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.ccem.rep-tool</groupId>
 			<artifactId>studio-repository-tool</artifactId>
 			<version>${studio.repository.version}</version>
+		</dependency>
+
+		<!-- Hibernate !-->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>${hibernate.jpa.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.ogm</groupId>
+			<artifactId>hibernate-ogm-core</artifactId>
+			<version>${hibernate.core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.ogm</groupId>
+			<artifactId>hibernate-ogm-mongodb</artifactId>
+			<version>${hibernate.mongodb.version}</version>
+		</dependency>
+
+		<!-- External dependencies !-->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons.io.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.nimbusds</groupId>
@@ -115,29 +127,9 @@
 			<version>${nimbusds.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.hibernate.javax.persistence</groupId>
-			<artifactId>hibernate-jpa-2.1-api</artifactId>
-			<version>${hibernate.jpa.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>jaxrs-api</artifactId>
-			<version>${jaxrs.api.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jaxrs</artifactId>
-			<version>${resteasy.jaxrs.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>${gson.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-cdi</artifactId>
-			<version>${resteasy.cdi.version}</version>
 		</dependency>
 	</dependencies>
 </project>

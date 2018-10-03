@@ -11,16 +11,11 @@
 	</parent>
 
 	<dependencies>
+        <!-- Internal dependencies !-->
 		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jaxrs</artifactId>
-			<version>${resteasy.jaxrs.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>jaxrs-api</artifactId>
-			<version>${jaxrs.api.version}</version>
+			<groupId>org.ccem.domain</groupId>
+			<artifactId>otus-domain-business</artifactId>
+			<version>${project.parent.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -29,18 +24,8 @@
 			<version>${gson.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.ccem.domain</groupId>
-			<artifactId>otus-domain-business</artifactId>
-			<version>${project.parent.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-cdi</artifactId>
-			<version>${resteasy.cdi.version}</version>
-			<scope>provided</scope>
-		</dependency>
+
+		<!-- Unit Tests !-->
 		<dependency>
 			<groupId>org.ccem.domain</groupId>
 			<artifactId>otus-domain-persistence</artifactId>
