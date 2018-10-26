@@ -7,15 +7,28 @@
 	<parent>
 		<groupId>org.ccem.domain</groupId>
 		<artifactId>otus-domain-root</artifactId>
-		<version>1.1</version>
+		<version>1.2</version>
 		<relativePath>../otus-domain-root/pom.xml</relativePath>
 	</parent>
 
 	<dependencies>
+        <!-- Internal dependencies !-->
 		<dependency>
 			<groupId>org.ccem.domain</groupId>
 			<artifactId>otus-domain-persistence</artifactId>
 			<version>${project.parent.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ccem.owail</groupId>
+			<artifactId>owail-sender</artifactId>
+			<version>${owail.sender.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ccem.rep-tool</groupId>
+			<artifactId>studio-repository-tool</artifactId>
+			<version>${studio.repository.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -24,25 +37,19 @@
 			<version>${equalize.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!-- External dependencies !-->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.ccem.owail</groupId>
-			<artifactId>owail-sender</artifactId>
-			<version>${owail.sender.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.ccem.rep-tool</groupId>
-			<artifactId>studio-repository-tool</artifactId>
-			<version>1.0-SNAPSHOT</version>
+			<version>${commons.io.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.nimbusds</groupId>
 			<artifactId>nimbus-jose-jwt</artifactId>
-			<version>4.18</version>
+			<version>${nimbusds.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>

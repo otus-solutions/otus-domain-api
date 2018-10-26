@@ -6,32 +6,12 @@
 	<parent>
 		<groupId>org.ccem.domain</groupId>
 		<artifactId>otus-domain-root</artifactId>
-		<version>1.1</version>
+		<version>1.2</version>
 		<relativePath>../otus-domain-root/pom.xml</relativePath>
 	</parent>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-jaxrs</artifactId>
-			<version>3.0.13.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>jaxrs-api</artifactId>
-			<version>3.0.12.Final</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax</groupId>
-			<artifactId>javaee-web-api</artifactId>
-			<version>7.0</version>
-			<scope>provided</scope>
-		</dependency>
+        <!-- Internal dependencies !-->
 		<dependency>
 			<groupId>org.ccem.domain</groupId>
 			<artifactId>otus-domain-business</artifactId>
@@ -39,11 +19,13 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.jboss.resteasy</groupId>
-			<artifactId>resteasy-cdi</artifactId>
-			<version>3.0.13.Final</version>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!-- Unit Tests !-->
 		<dependency>
 			<groupId>org.ccem.domain</groupId>
 			<artifactId>otus-domain-persistence</artifactId>
