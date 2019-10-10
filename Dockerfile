@@ -4,11 +4,11 @@ ARG DEPLOY_USER=admin
 ARG DEPLOY_PASS=admin
 ARG EAR_FILE=source/otus-domain-ear/target/otus-domain-ear.ear
 
-ENV DATABASE_NAME="otus"
+ENV DATABASE_NAME="otus-domain"
 ENV DATABASE_HOST="otus-database"
 ENV DATABASE_PORT="27017"
-ENV DATABASE_USER="otus"
-ENV DATABASE_PASS="otus"
+ENV DATABASE_USER="domain"
+ENV DATABASE_PASS="domain"
 
 USER root
 
