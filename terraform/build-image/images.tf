@@ -6,6 +6,10 @@ variable "otus-domain-api-name" {
   default = "otus-domain-api"  
 }
 
+variable "otus-domain-api-dockerfile" {
+  default = "."  
+}
+
 variable "otus-domain-api-source" {
   default = "source"  
 }
@@ -27,6 +31,6 @@ resource "null_resource" "otus-domain-api-build" {
 resource "null_resource" "otus-domain-api" {
   depends_on = [null_resource.otus-domain-api-build]
   provisioner "local-exec" {
-    command = "docker build -t ${var.otus-domain-api-name} ."
+    command = "docker build -t ${var.otus-domain-api-name} ${var.otus-domain-api-dockerfile}"
   }
 }
