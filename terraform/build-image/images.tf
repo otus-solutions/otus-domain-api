@@ -15,7 +15,7 @@ variable "otus-domain-api-source" {
 }
 
 variable "otus-domain-api-mvnbuild" {
-  default = "clean install"
+  default = "mvn clean install"
 }
 
 ###############################################
@@ -24,7 +24,7 @@ variable "otus-domain-api-mvnbuild" {
 resource "null_resource" "otus-domain-api-build" {
   provisioner "local-exec" {
     working_dir = "${var.otus-domain-api-source}/otus-domain-root"
-    command = "mvn ${var.otus-domain-api-mvnbuild}"
+    command = "${var.otus-domain-api-mvnbuild}"
   }
 }
  
