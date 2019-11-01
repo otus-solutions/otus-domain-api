@@ -17,13 +17,13 @@
         <properties>
             <property name="hibernate.transaction.jta.platform"
                       value="org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform"/>
-            <property name="hibernate.ogm.datastore.database" value="otus-domain"/>
-            <property name="hibernate.ogm.datastore.host" value="${database.host}"/>
+            <property name="hibernate.ogm.datastore.database" value="${env.DATABASE_NAME}"/>
+            <property name="hibernate.ogm.datastore.host" value="${env.DATABASE_HOST}"/>
             <property name="hibernate.ogm.datastore.provider" value="mongodb"/>
-            <property name="hibernate.ogm.datastore.port" value="${database.port}"/>
+            <property name="hibernate.ogm.datastore.port" value="${env.DATABASE_PORT}"/>
             <property name="hibernate.ogm.datastore.create_database" value="true"/>
-            <property name="hibernate.ogm.datastore.username" value="${database.username}"/>
-            <property name="hibernate.ogm.datastore.password" value="${database.password}"/>
+            <property name="hibernate.ogm.datastore.username" value="${env.DATABASE_USER}"/>
+            <property name="hibernate.ogm.datastore.password" value="${env.DATABASE_PASS}"/>
         </properties>
     </persistence-unit>
 </persistence>

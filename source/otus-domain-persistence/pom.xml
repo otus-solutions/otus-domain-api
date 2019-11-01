@@ -11,13 +11,6 @@
         <relativePath>../otus-domain-root/pom.xml</relativePath>
     </parent>
 
-    <properties>
-        <database.port>27017</database.port>
-        <database.host>localhost</database.host>
-        <database.username>otus</database.username>
-        <database.password>otus</database.password>
-    </properties>
-
     <dependencies>
         <!-- Internal dependencies !-->
         <dependency>
@@ -61,14 +54,4 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-    </build>
-
 </project>
