@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>otus-domain-rest</artifactId>
+	<packaging>war</packaging>
+
+	<parent>
+		<groupId>org.ccem.domain</groupId>
+		<artifactId>otus-domain-root</artifactId>
+		<version>1.3</version>
+		<relativePath>../otus-domain-root/pom.xml</relativePath>
+	</parent>
+
+	<dependencies>
+        <!-- Internal dependencies !-->
+		<dependency>
+			<groupId>org.ccem.domain</groupId>
+			<artifactId>otus-domain-business</artifactId>
+			<version>${project.parent.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Unit Tests !-->
+		<dependency>
+			<groupId>org.ccem.domain</groupId>
+			<artifactId>otus-domain-persistence</artifactId>
+			<version>${project.parent.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

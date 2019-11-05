@@ -15,4 +15,8 @@
 /**/npm-debug.log.*
 **/.sonar
 **/*npm-debug.log
+persistence/
+**/.terraform
+**/terraform.tfstate
+**/terraform.tfstate.backup
 
