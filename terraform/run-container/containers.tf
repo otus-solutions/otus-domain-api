@@ -2,6 +2,10 @@ variable "otus-domain-api-persistence"{
   default = "/otus-platform/docker-persistence/otus-domain-api"
 }
 
+variable "otus-api-network" {
+  default = "otus-api-network"
+}
+
 variable "otus-domain-api-porthttp"{
   default = 51006
 }
@@ -28,5 +32,8 @@ resource "docker_container" "otus-domain-api" {
   ports {
 	internal = 9990
 	external = "${var.otus-domain-api-portmanagement}"
+  }
+	networks_advanced {
+    name    = "${var.otus-api-network}"
   }
 }
