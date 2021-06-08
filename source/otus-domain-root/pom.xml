@@ -75,7 +75,7 @@
         <dependency>
             <groupId>org.wildfly.bom</groupId>
             <artifactId>wildfly</artifactId>
-            <version>14.0.1.Final</version>
+            <version>20.0.0.Final</version>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
